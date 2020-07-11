@@ -1,0 +1,368 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("./fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: local("./fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+
+body {
+    text-align: center;
+    color: white;
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    letter-spacing: 2pt;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.section-1 {
+    padding: 1% 15% 7%;
+    text-align: left;
+    background: rgb(113,106,228);
+    background: linear-gradient(58deg, rgba(113,106,228,1) 0%, rgba(155,18,141,1) 53%, rgba(215,36,108,1) 100%);
+}
+
+.section-1 nav {
+    padding: 0 0 70px;
+    z-index: 1;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.navbar-brand-large {
+    font-family: Arial Regular;
+    font-weight: bolder;
+    font-size: 18pt;
+    letter-spacing: 4pt;
+    line-height: 10pt;
+}
+
+.navbar-brand-small {
+    letter-spacing: 1pt;
+    font-family: Arial Regular;
+    font-size: 8pt;
+}
+
+.section-1 nav li {
+    padding: 0 18px;
+}
+
+.section-1 nav ul li a {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 7pt;
+    letter-spacing: 1.5pt;
+}
+
+.section-1 nav ul li button {
+    border: 1px solid white;
+    border-radius: 25pt;
+    font-size: 7pt;
+    letter-spacing: 2pt;
+    padding: 7pt 15pt;
+}
+
+.section-1-text-block {
+    margin-top: 50px;
+    z-index: 1;
+}
+
+@media (max-width: 1700) {
+    .section-1-text-block {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .section-1-text-block {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .section-1-text-block {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .section-1-text-block {
+        margin-top: 10px;
+    }
+}
+
+.small-heading {
+    letter-spacing: 1.3pt;
+    font-weight: lighter;
+}
+
+.big-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 3pt;
+    margin-bottom: -12pt;
+}
+
+.big-heading-green {
+    color: #8EFF54;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 3pt;
+}
+
+.heading-ipsum {
+    letter-spacing: 1pt;
+    font-weight: lighter;
+    line-height: 25pt;
+}
+
+.section-1-image-woman {
+    width: 450px;
+    position: absolute;
+    top: -200px;
+    right: 215pt;
+}
+
+.section-1-image-man {
+    width: 475px;
+    position: absolute;
+    top: 0pt;
+    right: 50pt;
+    filter: blur(8px);
+    -webkit-filter: blur(2px);
+}
+
+
+.section-2-left {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    background: rgb(215,36,108);
+    background: linear-gradient(40deg, rgba(215,36,108,1) 0%, rgba(128,4,191,1) 100%);
+}
+
+.section-2-middle {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    background: rgb(72,128,158);
+    background: linear-gradient(19deg, rgba(72,128,158,1) 0%, rgba(128,4,191,1) 100%);
+}
+
+.section-2-right {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    background: rgb(72,128,158);
+    background: linear-gradient(19deg, rgba(72,128,158,1) 0%, rgba(142,255,84,1) 100%);
+}
+
+.section-2 img {
+    width: 100%;
+    opacity: 25%;
+}
+
+.section-2-text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2pt;
+}
+
+.section-2 p {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 0px;
+}
+
+.section-2 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+
+.section-3 {
+    background-color: white;
+    padding-top: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: black;
+    padding-bottom: 70px;
+}
+
+.section-3 .fa {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 50pt;
+    color: #8004BF;
+}
+
+.section-3 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.section-3 h6 {
+    color: #8004BF;
+}
+
+.section-3 p {
+    line-height: 24pt;
+}
+
+.section-3-text-img-container {
+    padding-top: 70px;
+    text-align: left;
+}
+
+.section-3-text-img-container h6 {
+    padding-top: 10px;
+}
+
+.section-3 img {
+    width: 100%;
+}
+
+.section-3 .fas {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50pt;
+    color: #8004BF;
+}
+
+.section-3 button {
+    margin-top: 30px;
+    background-color: #8004BF;
+}
+
+.section-4 {
+    color: black;
+    background-image: url("/images/01.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
+    margin-right: -27%;
+}
+
+.section-4-card-container {
+    padding: 4% 37% 3% 15%;
+}
+
+.section-4-card-container h1 {
+    font-size: 20pt;
+    letter-spacing: 3pt;
+    font-weight: 800;
+}
+
+.section-4-card-container p {
+    margin-bottom: 0px;
+}
+
+.section-4-card-container button {
+    background: rgb(72,128,158);
+    background: linear-gradient(19deg, rgba(72,128,158,1) 0%, rgba(72,128,158,1) 100%);
+}
+
+
+.section-4-text-container {
+    color: white;
+}
+
+.section-4-text-container h5 {
+    padding-top: 50%;
+}
+
+.section-4-text-container h1 {
+    letter-spacing: 3pt;
+
+}
+
+.section-4-text-container p {
+    line-height: 24pt;
+}
+
+
+.section-4-red-h1 {
+    color: #D7246C;
+}
+
+.section-4-purple-h1 {
+    color: #8004BF;
+}
+
+.section-4-green-h1 {
+    color: #8EFF54;
+}
+
+.section-5 {
+
+}
+
+.sixth-section {
+    color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.seventh-section {
+    color: black;
+}
+
+.eigth-section {
+    color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.ninth-section {
+    color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.tenth-section {
+    color: black;
+}
+
+.eleventh-section {
+    color: black;
+}
+
+
+
+
