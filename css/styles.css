@@ -24,16 +24,22 @@ a:hover {
 }
 
 button {
-    padding: 10px 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-weight: bold;
-    font-size: 10pt;
-    letter-spacing: 2pt;
+    font-size: 18.66px;
+    letter-spacing: 5.3px;
     color: white;
     border: 1px solid white;
-    border-radius: 25px;
     background-color: transparent;
+    outline: none;
+    padding: 20px 70px;
+    border-radius: 40px;
 }
+
+button:focus {
+    outline:0;
+}
+
 
 button:hover {
     background-color: white;
@@ -41,15 +47,15 @@ button:hover {
 }
 
 .section-1 {
-    padding: 1% 15% 7%;
+    padding: 1% 13% 5%;
     text-align: left;
     background: rgb(113,106,228);
     background: linear-gradient(58deg, rgba(113,106,228,1) 0%, rgba(155,18,141,1) 53%, rgba(215,36,108,1) 100%);
 }
 
 .section-1 nav {
-    padding: 0 0 70px;
-    z-index: 1;
+    padding: 0 0 50px;
+    z-index: 2;
 }
 
 .navbar-toggler {
@@ -59,15 +65,24 @@ button:hover {
 .navbar-brand-large {
     font-family: Arial Regular;
     font-weight: bolder;
-    font-size: 18pt;
-    letter-spacing: 4pt;
-    line-height: 10pt;
+    font-size: 24px;
+    letter-spacing: 5.3px;
+    line-height: 15.3px;
 }
 
 .navbar-brand-small {
-    letter-spacing: 1pt;
+    letter-spacing: 1.33px;
     font-family: Arial Regular;
-    font-size: 8pt;
+    font-size: 10.66px;
+}
+
+.my-account {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-1 nav ul li button {
+    font-size: 8px;
 }
 
 .section-1 nav li {
@@ -77,92 +92,203 @@ button:hover {
 .section-1 nav ul li a {
     font-family: Arial;
     font-weight: bold;
-    font-size: 7pt;
-    letter-spacing: 1.5pt;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 .section-1 nav ul li button {
     border: 1px solid white;
-    border-radius: 25pt;
-    font-size: 7pt;
-    letter-spacing: 2pt;
-    padding: 7pt 15pt;
+    border-radius: 34px;
+    font-size: 12px;
+    letter-spacing: 2.66px;
+    padding: 9.33px 20px;
 }
 
 .section-1-text-block {
     margin-top: 50px;
-    z-index: 1;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.section-1-text-block button {
+    margin-top: 30px;
+
 }
 
 @media (max-width: 1700) {
     .section-1-text-block {
         margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
 @media (max-width: 1500px) {
     .section-1-text-block {
         margin-top: 30px;
+        margin-bottom: 30px;
     }
+
 }
 
 @media (max-width: 1400px) {
     .section-1-text-block {
         margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .small-heading {
+        font-size: 25px;
+    }
+    
+    .big-heading {
+        font-size: 80px;
+    }
+    
+    .big-heading-green {
+        font-size: 80px;
+    }
+    
+    .heading-ipsum {
+        font-size: 17px;
     }
 }
 
 @media (max-width: 1300px) {
     .section-1-text-block {
         margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .small-heading {
+        font-size: 22px;
+    }
+    
+    .big-heading {
+        font-size: 72px;
+    }
+    
+    .big-heading-green {
+        font-size: 72px;
+    }
+    
+    .heading-ipsum {
+        font-size: 15px;
     }
 }
 
 .small-heading {
-    letter-spacing: 1.3pt;
+    letter-spacing: 1.733px;
     font-weight: lighter;
+    font-size: 27px;
 }
 
 .big-heading {
-    font-size: 3.5rem;
+    font-size: 93.33px;
     font-weight: 900;
     line-height: 1.5;
-    letter-spacing: 3pt;
-    margin-bottom: -12pt;
+    letter-spacing: 4px;
+    margin-bottom: -16px;
 }
 
 .big-heading-green {
     color: #8EFF54;
-    font-size: 3.5rem;
+    font-size: 93.33px;
     font-weight: 900;
     line-height: 1.5;
-    letter-spacing: 3pt;
+    letter-spacing: 4px;
+}
+
+.heading-ipsum-container {
+    padding: 0px;
 }
 
 .heading-ipsum {
-    letter-spacing: 1pt;
+    letter-spacing: 1.33px;
     font-weight: lighter;
-    line-height: 25pt;
+    line-height: 33.33px;
+    font-size: 19px;
+}
+
+.section-1-circle-red {
+    position: absolute;
+    z-index: 0;
+    top: 24%;
+    left: 5%;
+    width: 5%;
+}
+.section-1-circle-white {
+    position: absolute;
+    z-index: 0;
+    top: 29%;
+    left: 55%;
+    width: 5%;
+}
+.section-1-rec-small {
+    position: absolute;
+    z-index: 0;
+    top: 88%;
+    left: 12%;
+    width: 0.5%;
+}
+.section-1-rec-big {
+    position: absolute;
+    z-index: 0;
+    top: 12%;
+    left: 17%;
+    width: 1%;
+}
+.section-1-rectangle-amorph {
+    z-index: 0;
+    top: 80%;
+    left: 44%;
+    position: absolute;
+    width: 2%;
+}
+.section-1-cikcakk-green {
+    z-index: 0;
+    top: 73%;
+    left: 32%;
+    position: absolute;
+    width: 5%;
+}
+.section-1-plus-green {
+    position: absolute;
+    z-index: 0;
+    top: 26%;
+    left: 49%;
+    width: 1%;
+}
+.section-1-plus-white {
+    z-index: 0;
+    top: 65%;
+    left: 8%;
+    position: absolute;
+    width: 2%;
 }
 
 .section-1-image-woman {
-    width: 450px;
+    width: 600px;
     position: absolute;
-    top: -200px;
-    right: 215pt;
+    top: -240px;
+    right: 290px;
+    z-index: 1;
 }
 
 .section-1-image-man {
-    width: 475px;
+    z-index: 1;
+    width: 625px;
     position: absolute;
     top: 0pt;
-    right: 50pt;
+    right: 10px;
     filter: blur(8px);
     -webkit-filter: blur(2px);
 }
 
+.section-2 {
+    position: relative;
+    z-index: 1;
+}
 
 .section-2-left {
+    overflow: hidden;
     position: relative;
     text-align: center;
     padding: 0px;
@@ -171,6 +297,7 @@ button:hover {
 }
 
 .section-2-middle {
+    overflow: hidden;
     position: relative;
     text-align: center;
     padding: 0px;
@@ -179,6 +306,7 @@ button:hover {
 }
 
 .section-2-right {
+    overflow: hidden;
     position: relative;
     text-align: center;
     padding: 0px;
@@ -189,6 +317,8 @@ button:hover {
 .section-2 img {
     width: 100%;
     opacity: 25%;
+    margin-top: -90px;
+    margin-bottom: -50px;
 }
 
 .section-2-text-container {
@@ -196,28 +326,27 @@ button:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    letter-spacing: 2pt;
+    letter-spacing: 2.66;
 }
 
 .section-2 p {
     font-family: Arial;
-    font-weight: bold;
-    font-size: 14pt;
+    font-size: 18.66px;
     margin-bottom: 0px;
 }
 
 .section-2 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    font-size: 30pt;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .section-3 {
     background-color: white;
     padding-top: 70px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 13%;
+    padding-right: 13%;
     color: black;
     padding-bottom: 70px;
 }
@@ -225,7 +354,7 @@ button:hover {
 .section-3 .fa {
     padding-top: 70px;
     padding-bottom: 30px;
-    font-size: 50pt;
+    font-size: 66.66;
     color: #8004BF;
 }
 
@@ -233,14 +362,40 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: 700;
-}
-
-.section-3 h6 {
-    color: #8004BF;
+    font-size: 50px;
+    margin-top: 24px;
 }
 
 .section-3 p {
-    line-height: 24pt;
+    color: gray;
+}
+
+.section-titles {
+    color: #8004BF;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sub-section-titles {
+    color: black;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.section-3 p {
+    line-height: 32px;
+}
+
+.section-3-icon-container {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.section-3-icon {
+    height: 80px;
+    
 }
 
 .section-3-text-img-container {
@@ -252,7 +407,7 @@ button:hover {
     padding-top: 10px;
 }
 
-.section-3 img {
+.section-3 .col-lg-6 img {
     width: 100%;
 }
 
@@ -262,31 +417,42 @@ button:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50pt;
+    font-size: 66.66;
     color: #8004BF;
 }
 
 .section-3 button {
-    margin-top: 30px;
-    background-color: #8004BF;
+    font-size: 18px;
+    margin-top: 24px;
+    background: rgb(72,128,158);
+    background: linear-gradient(82deg, rgba(72,128,158,1) 0%, rgba(128,4,191,1) 100%);
 }
 
 .section-4 {
     color: black;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.section-4-card-container {
+    /* position: relative; */
+    padding: 4% 37% 3% 15%;
     background-image: url("/images/01.jpg");
     background-size: cover;
     background-position: 0% 25%;
     margin-right: -27%;
 }
 
-.section-4-card-container {
-    padding: 4% 37% 3% 15%;
+.section-4-card-container h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-weight: 800;
 }
 
-.section-4-card-container h1 {
-    font-size: 20pt;
-    letter-spacing: 3pt;
-    font-weight: 800;
+.section-4-card-title-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .section-4-card-container p {
@@ -295,7 +461,11 @@ button:hover {
 
 .section-4-card-container button {
     background: rgb(72,128,158);
-    background: linear-gradient(19deg, rgba(72,128,158,1) 0%, rgba(72,128,158,1) 100%);
+    background: linear-gradient(82deg, rgba(72,128,158,1) 0%, rgba(128,4,191,1) 100%);
+}
+
+.section-4-list-item-group {
+    border-top: 1px solid grey;
 }
 
 
@@ -308,12 +478,12 @@ button:hover {
 }
 
 .section-4-text-container h1 {
-    letter-spacing: 3pt;
+    letter-spacing: 4px;
 
 }
 
 .section-4-text-container p {
-    line-height: 24pt;
+    line-height: 32px;
 }
 
 
@@ -330,39 +500,120 @@ button:hover {
 }
 
 .section-5 {
-
+    color: black;
+    overflow: hidden;
 }
 
-.sixth-section {
+.section-5 .container-fluid {
+    padding-left: 0px;
+}
+
+.section-5-background-container {
+    position: relative;
+    padding: 4% 37% 3% 15%;
+    background-image: url("/images/01.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
+    margin-right: -27%;
+}
+
+.section-5-color-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(72,128,158);
+    background: linear-gradient(19deg, rgba(72,128,158,1) 0%, rgba(215,24,24,0.3785889355742297) 0%);    
+}
+
+
+
+.section-6 {
     color: black;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 100px;
 }
 
-.seventh-section {
+.section-6 .col-lg-8 {
+    padding-bottom: 50px;
+}
+
+.section-6 .col-lg-8 h5 {
+    color: #8004BF;
+    text-align: center;
+}
+
+.section-6 h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-6 .col-lg-8 p {
+    color: gray;
+    text-align: center;
+}
+
+.section-6 h5 {
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    margin-top: 20px;
+    color: #8004BF;
+    text-align: left;
+}
+
+.section-6 p:first {
+    padding-bottom: 50px;
+}
+
+.section-6-samll-img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.section-6-double-img {
+    object-fit: cover;
+    width: 630px;
+    height: 300px;
+}
+
+.section-6-date {
+    color: gray;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.section-6 button {
+    margin-top: 35px;
+    margin-bottom: 70px;
+    background: rgb(72,128,158);
+    background: linear-gradient(19deg, rgba(72,128,158,1) 0%, rgba(128,4,191,1) 100%);
+}
+
+.section-7 {
     color: black;
 }
 
-.eigth-section {
-    color: black;
-    padding-left: 15%;
-    padding-right: 15%;
+.section-7 h5 {
+    color: #8004BF;
+    margin-bottom: 20px;
 }
 
-.ninth-section {
-    color: black;
-    padding-left: 15%;
-    padding-right: 15%;
+.section-7 h1 {
+    margin-bottom: 70px;
 }
 
-.tenth-section {
-    color: black;
+.section-7 .col-lg-3 {
+    padding: 0px;
+    overflow: hidden;
 }
 
-.eleventh-section {
-    color: black;
+.section-7 img {
+    width: 100%;
 }
-
-
-
-
